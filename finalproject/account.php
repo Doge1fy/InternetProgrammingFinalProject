@@ -5,6 +5,11 @@
 
     $userName = $_POST['username'];
     $passWord = $_POST['password'];
+    
+    if (isset($users[$userName])){
+            echo "username already exists";
+            exit;
+        }
 
    
    $allowed = '0123456789abcdef';
@@ -25,11 +30,7 @@
     );
 
     //check for duplicate users
-    if (isset($users[$userName])){
-        echo "Username already exists";
-        exit;
-    }
-    
+        
     $users[$userName] = $newUser;
 
     
