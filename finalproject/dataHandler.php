@@ -19,12 +19,6 @@
         file_put_contents($dataPath, $encodedData);
         echo "Data updated";
 
-        if ($result === false){
-            echo "failed to write to: " . $dataPath;
-
-        } else{
-            echo"wrote" . $result . "to" , $dataPath    
-        }
 
     }
 
