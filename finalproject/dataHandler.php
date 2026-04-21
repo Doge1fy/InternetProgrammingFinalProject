@@ -1,6 +1,6 @@
 <?php
 
-    $dataPath = __DIR__ . '/../FirnalProjectUserData/users.json';
+    $dataPath = __DIR__ . '/../FinalProjectUserData/users.json';
     
 
  

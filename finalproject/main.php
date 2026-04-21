@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
     <p>Welcome to your student grade dashboard, <?php echo $_SESSION['username']; ?>.</p>
 
     <div>
-        <a href="addgrades.html">
+        <a href="addgrades.php">
             <button type="button">Add Grades</button>
         </a>
     </div>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
     <br>
 
     <div>
-        <a href="grades.html">
+        <a href="grades.php">
             <button type="button">View Grades</button>
         </a>
     </div>

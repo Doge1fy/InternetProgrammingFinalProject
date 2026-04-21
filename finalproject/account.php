@@ -25,7 +25,7 @@
     );
 
     //check for duplicate users
-    if (isset($users[$username])){
+    if (isset($users[$userName])){
         echo "Username already exists";
         exit;
     }

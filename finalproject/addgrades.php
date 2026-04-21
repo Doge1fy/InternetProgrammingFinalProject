@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     //make the array
     $gradeAdd = array("semester" => $semester, "year" => $year, "courseNumber" => $courseNumber, "creditHours" => $creditHours, "grade" => $grade, "instructor" => $instructor);
     //add it
-    $users[$userName]['grades'][] = $newGrade;
+    $users[$userName]['grades'][] = $gradeAdd;
     update_data($users);
     
 
@@ -147,6 +147,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     <br>
 
-    <a href="main.html">Back to Main Menu</a>
+    <a href="main.php">Back to Main Menu</a>
 </body>
 </html>	
